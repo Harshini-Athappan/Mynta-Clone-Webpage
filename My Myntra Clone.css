@@ -1,0 +1,243 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    padding-left: 3px;
+    padding-top: 2px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #fff;
+    border-bottom: 1px solid #e0e0e0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo img {
+    height: 40px;
+}
+
+/* Navigation menu styling */
+.nav-menu {
+    display: flex;
+    align-items: center;
+    padding-left: 2px;
+}
+
+.nav-menu ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.nav-menu ul li {
+    position: relative;
+    margin-right: 20px;
+}
+
+.nav-menu ul li a {
+    text-decoration: none;
+    color: #333;
+    padding: 15px;
+    display: block;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav-menu ul li a:hover {
+    color: #ff3f6c;
+}
+
+.nav-menu .dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    display: none;
+    flex-direction: column;
+    min-width: 200px;
+    padding: 10px 0;
+    opacity: 0;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    visibility: hidden;
+}
+
+.nav-menu .dropdown li {
+    width: 100%;
+}
+
+.nav-menu .dropdown li a {
+    padding: 10px 20px;
+    display: block;
+    color: #333;
+}
+
+.nav-menu .dropdown li a:hover {
+    background-color: #f7f7f7;
+}
+
+/* Show dropdown on hover */
+.nav-menu ul li:hover .dropdown {
+    display: flex;
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Search bar styling */
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input {
+    padding: 8px;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    width: 200px;
+}
+
+.search-bar button {
+    background-color: #ff3f6c;
+    color: #fff;
+    border: none;
+    padding: 8px 15px;
+    margin-left: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.search-bar button:hover {
+    background-color: #e6325e;
+}
+
+/* User icons styling */
+.user-icons {
+    display: flex;
+    align-items: center;
+}
+
+.user-icons a {
+    margin-left: 15px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+.user-icons i {
+    margin-right: 5px;
+    font-size: 18px;
+}
+
+
+
+#carousel img{
+        width: auto; 
+        height: 700px; 
+        object-fit: cover; /
+      
+}
+.coupon{
+    font-size: 100%;;
+    color: blue;
+    text-align: center;
+    
+}
+.coupon h1 {
+    font-size: 5rem; 
+    line-height: 1.2; 
+    padding: 20px;
+    color:blue;
+    border-radius: 10px; 
+}
+
+.card {
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.card img {
+    object-fit: cover;
+    height: 300px; 
+}
+.card-body {
+    text-align: center;
+}
+.card-body h5 {
+    font-size: 1.25rem;
+    margin: 10px 0;
+}
+.card-body p {
+    font-size: 1rem;
+    margin: 5px 0;
+}
+.card-body .discount {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.dropdown{
+    list-style-type: none ;
+    padding-bottom: 5px;
+}
+.footer {
+    background-color: #282c3f;
+    color: white;
+    padding: 20px 0;
+    font-family: Arial, sans-serif;
+}
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.footer-section {
+    width: 25%;
+    padding: 10px;
+}
+.footer-section h3 {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #ff3f6c;
+}
+.footer-section p, .footer-section a {
+    color: white;
+    text-decoration: none;
+    margin-bottom: 5px;
+    font-size: 14px;
+    display: block;
+}
+.footer-section a:hover {
+    text-decoration: underline;
+}
+.footer-bottom {
+    text-align: center;
+    padding: 10px;
+    border-top: 1px solid #444;
+    margin-top: 20px;
+}
+.social-icons {
+    margin-top: 10px;
+}
+.social-icons a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: white;
+}
